@@ -1,0 +1,56 @@
+<html><head>
+  <style>
+    body{
+          background-image: url("signimage.jpg");
+          background-size: cover;
+    }
+  </style>
+    <body>
+<table border="0"/>
+<form align="center" action="action_page.php" style="border:1px solid #ccc">
+  <br>
+
+    <center><h1 style="color: red;font-family: algerian;">Sign Up</h1></center>
+    <hr>
+  <div>
+<center><br>
+<br><br>
+    <label for="email" style="color: red;font-family: arial"><b>Email:</b></label>
+   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" style="box-shadow: 0 0 10px 5px" placeholder="Enter Email" name="email" required>
+<br><br>
+    <label for="psw" style="color: red;font-family: arial"><b>Password:</b></label>
+   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+   <input type="password" style="box-shadow: 0 0 10px 5px" placeholder="Enter Password" name="psw" required>
+<br><br>
+    <label for="psw-repeat" style="color: red;font-family: arial"><b>Repeat Password:</b></label>
+    <input type="password" style="box-shadow: 0 0 10px 5px" placeholder="Repeat Password" name="psw-repeat" required>
+<br><br>
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    <p style="color: blue;font-weight: bold;font-size: 18px">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn" style="box-shadow: 0 0 4px 4px blue"><a href="file:///C:/Users/kishorkumar/Desktop/WEB%20DEVELOPMENT%20PROJECT/photographer/index.html">Cancel</a></button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <button onclick="myfunction(form)" type="submit" class="signupbtn" style="box-shadow: 0 0 4px 4px blue">Sign Up
+            <script language="javascript">
+                  function myfunction(form)
+                   {
+                    if (form.email.value=="anishkumar@gmail.com") 
+                     { 
+                    if (form.password.value=="kishorshyam") 
+                    {              
+                      location="file:///C:/Users/kishorkumar/Desktop/WEB%20DEVELOPMENT%20PROJECT/photographer/login/nowlogin.html?username=anishkumar&pass=kishorshyam"; 
+                      } else {
+                    alert("Invalid Password")
+                    }
+                    } else {  alert("please fill out the email and password")
+                    }
+                    }
+                    </script>
+      </button>
+     &nbsp&nbsp&nbsp&nbsp&nbsp <button type="button" class="cancelbtn" style="box-shadow: 0 0 4px 4px blue"><a href="file:///C:/Users/kishorkumar/Desktop/WEB%20DEVELOPMENT%20PROJECT/photographer/index.html">Go to home page</a></button>
+    </div>
+  </div>
+</form>
